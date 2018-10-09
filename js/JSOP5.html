@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+ </head>
+ <body>
+ <script> 
+	function foo()
+	{
+		console.log("Hello");
+	}
+	foo();//Method1 callin function
+
+var obj={};
+obj.foo=function (){
+console.log("Hello");
+};
+obj.foo(); //method2
+
+new foo(); //method3 call the function in the constructor mode
+
+
+ </script> 
+ </body>
+</html>

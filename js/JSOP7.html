@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+	function Bicycle(cadence, speed, gear,tirePressure)
+	{
+		this.cadence=cadence;
+		this.speed=speed;
+		this.gear=gear;
+		this.tirePressure=tirePressure;
+		this.inflateTires=function()
+		{
+			this.tirePressure += 3;
+		}
+	}
+	//calling function in constructor mode
+	var bicycle1=new Bicycle(50,20,4,25);
+	bicycle1.inflateTires();
+
+	var bicycle2=new Bicycle(40,10,5,30);
+	bicycle2.inflateTires();
+
+	function Mechanic(name){
+	this.name=name;
+	}
+
+	var anji=new Mechanic("Anji");
+
+	anji.inflateTires=bicycle1.inflateTires;
+	anji.inflateTires();
+  </script>
+ </body>
+</html>

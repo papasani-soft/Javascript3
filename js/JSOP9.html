@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+	function Manager(name,dept){this.name=name,this.dept=dept;}
+	Manager.prototype.getDept=function(){return this.dept;}
+	var mgr=new Manager("Michale","sales");
+	//mgr.getDept();
+	mgr._proto_._proto_===Object.prototype
+	mgr._proto_._proto_=Employee.prototype
+	mgr.getName()
+	Employee.prototype.getSalary=function(){return 100;}
+	emp1.getSalary()
+	mgr.getSalary()
+
+  </script>
+ </body>
+</html>

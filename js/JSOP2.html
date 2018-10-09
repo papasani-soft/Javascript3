@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+   var emp1={};
+   emp1.firstName="anji";
+   emp1.lastName="papasani";
+   emp1.gender="M";
+   emp1.designation=" Regional Manager";
+   var emp2={};
+   emp2.firstName="hari";
+   emp2.lastName="papasani";
+   emp2.gender="M";
+   emp2.designation="Assistant to the Regional Manager"; 
+   function createEmployeeObject(firstName,lastName,gender,designation)
+   {
+	   //  var newObject={};
+	    this.firstName=firstName;
+		this.lastName=lastName;
+		this.gender=gender;
+	    this.designation=designation;
+	  //  return newObject;
+   }
+   var emp3=new createEmployeeObject("Jim","Halper","M","salesRepresenter");
+  </script>
+ </body>
+</html>
